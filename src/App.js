@@ -15,7 +15,7 @@ function App() {
   const { buy } = useBuy();
 
 
-  const price = 10;
+  const price = 1250;
   const { login, logout } = useAuth();
   const { account } = useWeb3React();
 
@@ -62,7 +62,7 @@ function App() {
       <ToastContainer />
 
       <div className="root">
-        <div className="lefttree">
+        {/* <div className="lefttree">
           <img
             className="img-fluid leftimg"
             src={require("./assets/img/left.svg").default}
@@ -76,7 +76,7 @@ function App() {
             alt=""
           />
         </div>
-        {/* <div className="birdsdiv">
+        <div className="birdsdiv">
           <img
             className="img-fluid birdimg"
             src={require("./assets/img/bird.png").default}
@@ -107,6 +107,11 @@ function App() {
               lg="12"
             >
               <div className="">
+                <div className="text-center mt-4">
+                <h1 className="title">TradeFI Presale</h1>
+                </div>
+                <br></br>
+    
                 <div className="button-mint d-flex justify-content-center">
                   {/* <button className="minus mr-3" onClick={minus}>
                     -
@@ -130,24 +135,32 @@ function App() {
                   {/* <h3 className="subtitle"> {supply} / {supplyMax}</h3> */}
                 </div>
                 <div className="text-center mt-4">
-                  <h3 className="subtitle">{price} Tokens Per AVAX</h3>
+                  <h3 className="subtitle">Payments made in ETH</h3>
+                  <br></br>
+                  <h3 className="subtitle">1 $TFI = 1 USD</h3>
                 </div>
                 <div className="text-center mt-5">
-                  <img
-                    className="img-fluid opensealogo"
-                    // src={require("./assets/img/opensea.png").default}
-                    alt=""
-                  />
+                <details class="dropdown">
+    <summary role="button">
+      <a class="button">More details</a>
+    </summary>
+    <ul>
+      <li><a href="https://www.tradefiswap.com/">Website</a></li>
+      <li><a href="https://tradefi.gitbook.io/tradefi-the-future-of-trading/getting-started/what-is-tradefi">Docs</a></li>
+      <li><a href="https://app.tradefiswap.com/#/trade">dAPP</a></li>
+      <li><a href="https://twitter.com/tradefi_swap">Twitter</a></li>
+      <li><a href="https://t.me/tradefichannel">Telegram</a></li>
+  </ul>
+</details>
+           
+                  
                 </div>
               </div>
             </Col>
-            {/* <Col lg="6" className="mbr">
+            {/* <Col lg="1" className="mbr">
               <div className="right-img">
-                <img
-                  className="img-fluid rightlogo"
-                  // src={require("./assets/img/we.jpeg").default}
-                  alt=""
-                />
+                <h5 className="subtitle">TradeFI</h5>
+                
               </div>
             </Col> */}
           </Row>
