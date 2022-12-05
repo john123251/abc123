@@ -111,6 +111,10 @@ function App() {
                 <h1 className="title">TradeFI Presale</h1>
                 </div>
                 <br></br>
+                <div className="text-center mt-4">
+                <h1 className="subtitle">Introduce the amount of tokens you want to buy</h1>
+                </div>
+                <br></br>
     
                 <div className="button-mint d-flex justify-content-center">
                   {/* <button className="minus mr-3" onClick={minus}>
